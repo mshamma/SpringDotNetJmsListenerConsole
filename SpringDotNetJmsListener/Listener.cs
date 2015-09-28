@@ -16,6 +16,8 @@ namespace SpringDotNetJmsListener
         public void OnMessage(IMessage message)
         {
             ITextMessage textMessage = message as ITextMessage;
+
+            // Handle the message here 
             Console.WriteLine(textMessage.Text);
         }
 
